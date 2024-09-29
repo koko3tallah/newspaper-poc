@@ -1,0 +1,39 @@
+server:
+  port: 8099
+
+spring:
+  application:
+    name: Newspaper App
+  datasource:
+    url: jdbc:mysql://localhost:3306/newspaper?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: newspaper_admin
+    password: P@ssw0rd
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 30000
+      max-lifetime: 600000
+      connection-timeout: 20000
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
+springdoc:
+  swagger-ui:
+    enabled: true
+    disable-swagger-default-url: true
+    path: /swagger-ui.html
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+
+jwt:
+  secretKey: u4iK9IvQYP7ONwMEC64N7JjZcI6v1zFzHvDgTjCgUQU=
+  ttl: 60000
+  refreshTokenDurationMs: 604800000
