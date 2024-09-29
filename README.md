@@ -20,7 +20,7 @@ The **Newspaper Management System** is a backend API service that manages user a
 3. **News Management**:
     - News CRUD operations.
     - Pending approval mechanism for news created by content writers.
-    - Auto-soft deletion of news after exceeding the publish date.
+    - Auto-soft deletion of news after exceeding the publishing date.
 
 4. **Security**:
     - JWT-based authentication with token expiry and refresh support.
@@ -48,33 +48,14 @@ CREATE SCHEMA newspaper;
 -- Grant privileges
 GRANT ALL PRIVILEGES ON newspaper.* TO 'newspaper_admin'@'%';
 
--- Insert a default admin user
+-- After the application creates the 'user' table please run this insert statement.
 -- Password for 'admin@gmail.com' is 'password123' (BCrypt hashed)
 INSERT INTO newspaper.user (created_at, modified_at, date_of_birth, email, full_name, password, role, created_by_id, modified_by_id)
 VALUES (null, null, '1990-01-01', 'admin@gmail.com', 'System Admin',
         '$2a$10$zDKaUgSFGHvwUuJo4hc1sOMTET.30U0ziOfaeYiokLYcaQy4DTR8O', 'ADMIN', null, null);
 ```
 
-### 2. Configuration
-
-In the **application.properties** or **application.yml** file, configure the following properties for database and JWT settings:
-
-```properties
-# MySQL Configuration
-spring.datasource.url=jdbc:mysql://localhost:3306/newspaper
-spring.datasource.username=newspaper_admin
-spring.datasource.password=P@ssw0rd
-
-# JPA settings for database creation
-spring.jpa.hibernate.ddl-auto=update
-
-# JWT Configuration
-jwt.secretKey=u4iK9IvQYP7ONwMEC64N7JjZcI6v1zFzHvDgTjCgUQU=
-jwt.ttl=60000  # 1 minute
-jwt.refreshTokenDurationMs=604800000  # 7 days
-```
-
-### 3. Build and Run
+### 2. Build and Run
 
 After setting up the database and configuration, you can build and run the application using Maven:
 
