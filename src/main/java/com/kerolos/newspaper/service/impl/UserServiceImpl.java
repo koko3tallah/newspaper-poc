@@ -4,7 +4,7 @@ import com.kerolos.newspaper.data.dto.AdminSignupRequest;
 import com.kerolos.newspaper.data.dto.UserResponse;
 import com.kerolos.newspaper.data.entity.User;
 import com.kerolos.newspaper.mapper.UserMapper;
-import com.kerolos.newspaper.reposatory.UserRepository;
+import com.kerolos.newspaper.repository.UserRepository;
 import com.kerolos.newspaper.service.AuthenticationService;
 import com.kerolos.newspaper.service.UserService;
 import lombok.RequiredArgsConstructor;

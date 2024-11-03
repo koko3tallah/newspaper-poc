@@ -1,4 +1,4 @@
-package com.kerolos.newspaper.reposatory;
+package com.kerolos.newspaper.repository;
 
 import com.kerolos.newspaper.data.entity.News;
 import com.kerolos.newspaper.data.enums.NewsStatus;

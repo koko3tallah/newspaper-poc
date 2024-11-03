@@ -1,7 +1,7 @@
 package com.kerolos.newspaper.configuration;
 
 import com.kerolos.newspaper.data.entity.User;
-import com.kerolos.newspaper.reposatory.UserRepository;
+import com.kerolos.newspaper.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,7 +15,7 @@ import java.util.Optional;
 
 @Configuration
 @EnableJpaAuditing
-@EnableJpaRepositories(basePackages = "com.kerolos.newspaper.reposatory")
+@EnableJpaRepositories(basePackages = "com.kerolos.newspaper.repository")
 @RequiredArgsConstructor
 public class JpaAppConfig {
 

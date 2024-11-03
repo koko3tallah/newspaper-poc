@@ -6,7 +6,7 @@ import com.kerolos.newspaper.data.entity.News;
 import com.kerolos.newspaper.data.entity.User;
 import com.kerolos.newspaper.data.enums.NewsStatus;
 import com.kerolos.newspaper.mapper.NewsMapper;
-import com.kerolos.newspaper.reposatory.NewsRepository;
+import com.kerolos.newspaper.repository.NewsRepository;
 import com.kerolos.newspaper.security.CustomUserDetailsService;
 import com.kerolos.newspaper.service.NewsService;
 import lombok.RequiredArgsConstructor;

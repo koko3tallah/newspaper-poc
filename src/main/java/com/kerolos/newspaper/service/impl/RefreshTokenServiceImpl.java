@@ -4,7 +4,7 @@ import com.kerolos.newspaper.data.dto.JwtResponse;
 import com.kerolos.newspaper.data.dto.RefreshTokenRequest;
 import com.kerolos.newspaper.data.entity.RefreshToken;
 import com.kerolos.newspaper.data.entity.User;
-import com.kerolos.newspaper.reposatory.RefreshTokenRepository;
+import com.kerolos.newspaper.repository.RefreshTokenRepository;
 import com.kerolos.newspaper.security.JwtUtils;
 import com.kerolos.newspaper.service.RefreshTokenService;
 import lombok.RequiredArgsConstructor;

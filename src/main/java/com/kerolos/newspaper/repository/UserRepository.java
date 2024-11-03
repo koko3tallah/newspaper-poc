@@ -1,4 +1,4 @@
-package com.kerolos.newspaper.reposatory;
+package com.kerolos.newspaper.repository;
 
 import com.kerolos.newspaper.data.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;

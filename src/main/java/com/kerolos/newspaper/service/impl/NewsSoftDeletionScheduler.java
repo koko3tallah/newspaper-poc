@@ -2,7 +2,7 @@ package com.kerolos.newspaper.service.impl;
 
 import com.kerolos.newspaper.data.entity.News;
 import com.kerolos.newspaper.data.enums.NewsStatus;
-import com.kerolos.newspaper.reposatory.NewsRepository;
+import com.kerolos.newspaper.repository.NewsRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.Scheduled;

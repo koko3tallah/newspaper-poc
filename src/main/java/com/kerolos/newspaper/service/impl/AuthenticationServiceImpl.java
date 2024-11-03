@@ -4,7 +4,7 @@ import com.kerolos.newspaper.data.dto.AdminSignupRequest;
 import com.kerolos.newspaper.data.dto.JwtResponse;
 import com.kerolos.newspaper.data.dto.LoginRequest;
 import com.kerolos.newspaper.data.entity.User;
-import com.kerolos.newspaper.reposatory.UserRepository;
+import com.kerolos.newspaper.repository.UserRepository;
 import com.kerolos.newspaper.security.JwtUtils;
 import com.kerolos.newspaper.security.TokenBlacklistService;
 import com.kerolos.newspaper.service.AuthenticationService;

@@ -1,7 +1,7 @@
 package com.kerolos.newspaper.security;
 
 import com.kerolos.newspaper.data.entity.User;
-import com.kerolos.newspaper.reposatory.UserRepository;
+import com.kerolos.newspaper.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
